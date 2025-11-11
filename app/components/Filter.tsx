@@ -78,7 +78,7 @@ const FilterBar: FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-white p-4 shadow-xl rounded-xl mb-6 border border-gray-200"
+      className="bg-white  p-4 shadow-xl rounded-xl mb-6 border border-gray-200"
     >
       <div className="flex flex-wrap items-end gap-8">
         <SelectFilter
