@@ -24,13 +24,15 @@ export default function LoginPage() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
     };
 
+    
+
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
+        <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4 mb-10">
             <motion.div
                 initial={{ opacity: 0, scale: 0.98, y: 40 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 sm:p-16 border border-gray-100"
+                className="w-full md:w-[500px] bg-white rounded-2xl shadow-xl p-8 sm:p-16 border border-gray-100"
             >
                 {/* Logo Section */}
                 <motion.div
@@ -184,7 +186,7 @@ export default function LoginPage() {
                                 onClick={() => setShowPassword(!showPassword)}
                                 whileHover={{ scale: 1.15 }}
                                 whileTap={{ scale: 0.9 }}
-                                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-500"
+                                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-500 cursor-pointer"
                             >
                                 {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                             </motion.button>
@@ -198,27 +200,15 @@ export default function LoginPage() {
                             whileHover={{ scale: 1.03 }}
                             whileTap={{ scale: 0.98 }}
                             type="submit"
-                            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-medium shadow-md transition focus:ring-2 focus:ring-blue-300 focus:outline-none"
+                            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-medium shadow-md transition focus:ring-2 focus:ring-blue-300 focus:outline-none cursor-pointer"
                         >
                             Sign In
                         </motion.button>
                     </motion.div>
                 </motion.form>
 
-                {/* Footer Links */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="flex justify-between items-center mt-6 text-sm text-gray-500"
-                >
-                    <a href="#" className="hover:text-blue-600 transition">
-                        Forgot password?
-                    </a>
-                    <a href="#" className="hover:text-blue-600 transition">
-                        Create account
-                    </a>
-                </motion.div>
+          
+              
             </motion.div>
         </div>
     );
