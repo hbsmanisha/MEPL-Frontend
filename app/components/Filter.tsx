@@ -124,13 +124,19 @@ const FilterBar: FC = () => {
 
         {/* Animated Apply Button */}
         <motion.button
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.07 }}
           whileTap={{ scale: 0.95 }}
-          className="primary-btn self-end"
+          transition={{ type: "spring", stiffness: 200, damping: 12 }}
+          className="self-end px-6 py-2.5 rounded-full font-semibold text-sm text-white 
+             bg-gradient-to-r from-[#3b82f6] via-[#2563eb] to-[#1d4ed8] 
+             border border-[#1e40af] shadow-md hover:shadow-lg 
+             hover:from-[#60a5fa] hover:via-[#3b82f6] hover:to-[#2563eb] 
+             transition-all duration-300 ease-in-out cursor-pointer uppercase"
           onClick={() => console.log('Filters Applied!')}
         >
           Apply Filters
         </motion.button>
+
       </div>
     </motion.div>
   );

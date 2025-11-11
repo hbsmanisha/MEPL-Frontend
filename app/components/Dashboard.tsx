@@ -34,25 +34,25 @@ export default function Dashboard() {
       </div>
 
       {/* KPI Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         <KPICard label="Overall OEE" value="65%" color="text-green-600" />
         <KPICard label="Availability" value="89%" trend={-5} />
         <KPICard label="Performance" value="79%" />
-      </div>
+      </div> */}
 
       {/* Charts + Production Summary Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
         <ChartCard />
         <ProductionSummaryCard actual={9448} expected={8685} target={27000} rate={72} />
-      </div>
+      </div> */}
 
       {/* OEE Table */}
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <p className="text-[20px] text-[#5c697d] font-semibold mb-6">
           Production Performance Table
         </p>
         <OEETable />
-      </div>
+      </div> */}
     </main>
   );
 }
