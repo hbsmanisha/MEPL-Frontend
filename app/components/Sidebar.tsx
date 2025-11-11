@@ -22,8 +22,8 @@ interface SidebarProps {
 }
 
 const menu = [
-  { icon: Home, label: "Dashboard", href: "#dashboard", isActive: true },
-  { icon: Clock, label: "History", href: "#history", isActive: false },
+  { icon: Home, label: "Main Dashboard", href: "#dashboard", isActive: true },
+  { icon: Clock, label: "Plant Dashboard", href: "#history", isActive: false },
   { icon: Wallet, label: "My accounts", href: "#accounts", isActive: false },
   {
     icon: Repeat2,
