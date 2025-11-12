@@ -31,7 +31,7 @@ const MachineCard: React.FC<MachineCardProps> = ({
 
   return (
     <motion.div
-      className="bg-gradient-to-b from-[#93b4ff] to-[#c3d7ff] rounded-2xl shadow-xl flex flex-col justify-center items-center p-6 w-[90%] sm:w-[380px] md:w-[420px] lg:w-[740px] min-h-[280px] hover:shadow-blue-300 transition-all"
+      className="bg-gradient-to-b from-[#93b4ff] to-[#c3d7ff] rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 w-[90%] sm:w-[380px] md:w-[420px] lg:w-[740px] min-h-[280px] hover:shadow-blue-300 transition-all"
       initial={{ opacity: 0, y: 40, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ type: "spring", duration: 0.8, stiffness: 120 }}

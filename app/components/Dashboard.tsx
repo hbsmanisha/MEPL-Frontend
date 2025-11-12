@@ -15,14 +15,14 @@ export default function Dashboard() {
   ];
 
   return (
-    <main className="p-4 sm:p-6 lg:p-8 bg-gray-50 min-h-screen">
+    <main className="p-4 sm:p-6 lg:p-4 bg-gray-50 min-h-screen">
       {/* Filter Bar */}
       <div className="mb-6">
         <FilterBar />
       </div>
 
       {/* Machine Cards Section — 2 per row on tablet, 1 on mobile, 2 on desktop */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 justify-items-center mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 justify-items-center mb-10">
         {machines.map((m) => (
           <MachineCard key={m.id} {...m} />
         ))}
